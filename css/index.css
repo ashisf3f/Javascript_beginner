@@ -1,0 +1,31 @@
+.anslist{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin: 9px;
+    margin-left: 15px;
+    user-select: none;
+}
+.listBox {
+    border-radius: 9px;
+    padding: 25px;
+    background-color: gray;
+    margin: 15px;
+}
+.qnshead{
+    font-size: larger;
+}
+input{
+    cursor: pointer;
+}
+input[type='radio']:checked:after {
+    width: 9px;
+    height: 9px;
+    border-radius: 15px;
+    background-color: #003cff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(0, 255, 98);
+}
