@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/clac.css" />
+  </head>
+  <body>
+    <div class="main">
+      Enter the number:-
+      <input type="number" id="myValue" />
+    </div>
+    <br />
+    <button onclick="calcResult()">Result</button>
+    <div class="result" id="result"></div>
+    <script>
+      let showRes = document.getElementById("result");
+      calcResult = () => {
+        let number = parseInt(document.getElementById("myValue").value);
+        if (number % 2 === 0) {
+          showRes.innerHTML = "The number is Even";
+        } else {
+          showRes.innerHTML = "The number is Odd";
+        }
+      };
+    </script>
+  </body>
+</html>

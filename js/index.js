@@ -1,5 +1,4 @@
 const showQns = document.getElementById("questions");
-const showAns = document.getElementById("answer");
 
 let quizList = {
   list: [
@@ -12,7 +11,7 @@ let quizList = {
         c: "Pokhara",
         d: "JanakPur",
       },
-      correctAns: "a",
+      correctAns: "Kathmandu",
     },
     {
       option: "same2",
@@ -23,7 +22,7 @@ let quizList = {
         c: "Pokhara",
         d: "JanakPur",
       },
-      correctAns: "a",
+      correctAns: "Delhi",
     },
     {
       option: "same3",
@@ -34,7 +33,7 @@ let quizList = {
         c: "California",
         d: "Texas",
       },
-      correctAns: "b",
+      correctAns: "Washington DC",
     },
   ],
 };
@@ -56,6 +55,16 @@ let data = quizList.list
   .join(" ");
 
 showQns.innerHTML = data;
-handlesubmit = (e) => {
-  alert("don't sneak my code");
-};
+
+let ask = prompt("Enter your age");
+switch (ask) {
+  case ask < 18:
+    alert("you are elder");
+    break;
+  case null:
+    alert("enter any value");
+    break;
+  default:
+    alert("you are younger");
+    break;
+}
