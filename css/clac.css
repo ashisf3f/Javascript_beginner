@@ -7,7 +7,53 @@
     background: black;
   }
 }
+input{
+  color: cyan;
+  outline: none;
+  text-align: center;
+  width: 50px;
+  background-color: gray;
+  font-weight: bold;
+  font-size: large;
+  
+  /* border: none; */
+
+}
+.button{
+  padding: 2px;
+  font-size: large;
+  font-weight: bold;
+  margin: 9px;
+  border-radius: 9px;
+  color: cyan;
+  cursor: pointer;
+  
+}
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+#root{
+  color: cyan;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  
+  cursor: all-scroll;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: cyan;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(1, 238, 255);
 }
