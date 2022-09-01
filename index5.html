@@ -12,17 +12,26 @@
     <input type="number" name="num" id="num1" max="7" /> <br />
     <!-- // document.write(""); -->
     <button onclick="handleResult()" class="button">Show Output</button>
-
+    <!-- <span style="color: red">hi</span> -->
     <div id="root"></div>
     <script>
       let main = document.getElementById("root");
+
       handleResult = () => {
         let info = parseInt(document.getElementById("num1").value);
-        for (let i = 1; i <= info; i++) {
-          for (let j = 1; j <= i; j++) {
-            main.innerHTML += "* ";
+        if (!info) {
+          main.innerHTML =
+            "<span1 style='color : red;' >Warning ! </span1>Enter Some Value in input field";
+          setTimeout(() => {
+            main.style.display = "none";
+          }, 2000);
+        } else {
+          for (let i = 1; i <= info; i++) {
+            for (let j = 1; j <= i; j++) {
+              main.innerHTML += "* ";
+            }
+            main.innerHTML += "<br>";
           }
-          main.innerHTML += "<br>";
         }
       };
     </script>
