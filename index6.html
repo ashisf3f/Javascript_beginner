@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/clac.css" />
+  </head>
+  <body>
+    <center>
+      <div id="value">0</div>
+      <button id="icrement">+</button>
+      <button id="decrement">-</button>
+      <button id="reset">Reset</button>
+    </center>
+    <script>
+      const value = document.getElementById("value");
+      const btnIncre = document.getElementById("icrement");
+      const btnDecre = document.getElementById("decrement");
+      const btnRes = document.getElementById("reset");
+
+      let count = 0;
+      btnIncre.addEventListener("click", () => {
+        count++;
+        value.textContent = count;
+      });
+      btnDecre.addEventListener("click", () => {
+        count--;
+        value.textContent = count;
+      });
+
+      btnRes.addEventListener("click", () => {
+        count = 0;
+        value.textContent = count;
+      });
+    </script>
+  </body>
+</html>
